@@ -154,3 +154,151 @@ body{
     grid-row: 1;
     max-width: 90%;   
 }
+/* Riesgo */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;  
+    padding: 2rem;  
+}
+.main__table{  
+    margin: 8rem 0;
+   width: 90%;
+   border: solid 2px var(--primario);
+}
+.caption__title{
+    margin: 0;
+}
+.tr__enc{
+    text-align: left; 
+    padding: 3px;   
+    border: solid 1px var(--primario);
+}
+.tr__encB{
+    text-align: center;
+    padding: 3px;
+    background-color: blue;
+    border: solid blue 1px;
+    color: var(--secundario);
+}
+.tr__encR{
+    text-align: center;
+    padding: 3px;
+    background-color: red;
+    border: solid red 1px;
+    color: var(--secundario); 
+}
+.tr__encY{
+    text-align: center;
+    padding: 3px;
+    background-color: yellow;
+    border: solid yellow 1px;
+    color: black;
+}
+.tr__data{
+    text-align: left;
+    padding: 3px;
+    border: solid 1px var(--primario);
+}
+.tr__dataB{
+    text-align: center;
+    padding: 3px;
+    background-color: blue;
+    border: solid blue 1px;
+    color: var(--secundario);
+}
+.tr__dataR{
+    text-align: center;
+    padding: 3px;
+    background-color: red;
+    border: solid red 1px;
+    color: var(--secundario); 
+}
+.tr__dataY{
+    text-align: center;
+    padding: 3px;
+    background-color: yellow;
+    border: solid yellow 1px;
+    color: black;
+}
+@media(max-width: 1440px){
+    
+}      
+@media (max-width: 900px){
+    .header__nav-ul{
+        flex-direction: column;
+        padding: 0;
+    }
+    .header__nav-a{
+        padding: 1rem;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+    }  
+    .main{
+       padding-bottom: 0;
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+    }
+    /* sistem */
+    .section-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .section__subtitle,
+    .section__text{
+        margin: 1rem;
+    }
+    /* rieso */
+    .grid{
+        grid-template-columns: 1fr;        
+    }   
+    .main__table{
+        margin: 2rem 0;
+    }
+    .section__img-riesgo{
+        max-width: 90%;  
+      
+    }
+}
+
+@media(max-width: 600px){
+    .main{
+        padding-bottom: 0;
+     }
+     .main__title,
+     .main__text,
+     .section__title,
+     .section__text
+     {
+            font-size: medium;
+     }
+    /* system */
+    .section-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .section__title-syst,
+    .section__subtitle,
+    .section__text,
+    .section__text,
+    .section__item{
+        font-size: medium;
+    }
+    /* reiso */
+    .container{
+        padding: 1rem;
+    }   
+    .section__title-riesgo,
+    .caption__title,
+    .tr__enc,
+    .tr__data{
+        font-size: medium;        
+    }
+
+   
+    
+}
